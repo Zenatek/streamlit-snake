@@ -36,7 +36,8 @@ def on_button_click():
             "food": place_food(st.session_state.game_state["snake"]),
             "score": 0,
             "game_over": False,
-            "last_update": time.time()
+            "last_update": time.time(),
+            "fruit": "🍐"
         }
 
 def update_snake():
@@ -133,6 +134,7 @@ with st.container():
 
 if st.session_state.game_state["game_over"]:
     st.title("Game Over")
+    st.snow()
 
 # Pause for the update_interval to create a continuous loop effect
 time.sleep(update_interval)
