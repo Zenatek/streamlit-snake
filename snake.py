@@ -107,7 +107,7 @@ st.button("Restart Game", on_click=on_button_click)
 st.text(f"Score: {st.session_state.game_state['score']}")
 
 st.write("Controls:")
-st.write("swift+W > UP | swift+S > DOWN | swift+L > LEFT | swift+R > RIGHT")
+st.write("shift+W > UP | shift+S > DOWN | shift+L > LEFT | shift+R > RIGHT")
 
 # Check the last update time and update snake if the interval has passed.
 current_time = time.time()
